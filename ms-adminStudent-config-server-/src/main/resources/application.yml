@@ -1,0 +1,30 @@
+server:
+  port: 8888
+  
+spring:
+  application:
+    name: ms-adminstudent-config-server-1
+    
+#Configuracion Local
+#  profiles:
+#    active: native
+    
+#  cloud:
+#   config:
+#      server:
+#        native:
+#         search-locations: ///C:\Users\RODRIGO\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\ms-gestion-config-data
+      
+#Configuracion Cloud (git)
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/rodrigo152/Ms-servicios2.git
+          searchPaths: /ms-gestion-config-data
+          username: ${USER_NAME}
+          password: ${USER_PASSWORD}
+          default-label: main
+          cloneOnStart: true
+#          ignore-local-ssh-settings: true     
+#          nore-local-ssh-settings: true 
