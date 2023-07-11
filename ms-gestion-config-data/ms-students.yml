@@ -1,6 +1,5 @@
-
 server:
-  port: 8090
+  port: 8095
   servlet:
     context-path: /lista
     
@@ -19,13 +18,13 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 ##Configuraciones JPA - Hibernate
-  jpa:
+jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect
     show-sql: true
     hibernate:
       naming:
-        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+       implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+       physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
 # Registry Client
 eureka:
