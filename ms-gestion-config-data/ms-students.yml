@@ -1,22 +1,16 @@
 server:
   port: 8090
   servlet:
-    context-path: /lista
-    
+    context-path: /lista    
   error:
-    include-details: always
-
-
-               
+    include-details: always              
 # Conexión a MySQL
-
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/testdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false
     username: root
     password: milimetro23
     driver-class-name: com.mysql.cj.jdbc.Driver
-
 ##Configuraciones JPA - Hibernate
 jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect
