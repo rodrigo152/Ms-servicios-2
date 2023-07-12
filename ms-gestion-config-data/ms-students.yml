@@ -7,9 +7,9 @@ server:
 # Conexión a MySQL
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/testdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false
-    username: root
-    password: milimetro23
+    url: jdbc:mysql://portal-estudiantil1.mysql.database.azure.com:3306/testdb?
+    username: Administrador
+    password: Milimetro23
     driver-class-name: com.mysql.cj.jdbc.Driver
     
     
